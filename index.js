@@ -102,7 +102,7 @@ function draw() {
             if (index < scaled_grayscales.length && scaled_grayscales[index] === scaled_grayscales[index]) {
                 let style = Math.min(255, scaled_grayscales[index] * brightness);
                 ctx.fillStyle = 'rgb(' + style.toString() + ',' + style.toString() + ',' + style.toString() + ')';
-                ctx.fillText(symbols[gen_int(0, symbols.length)], j * font_size, i * font_size);
+                ctx.fillText(symbols[gen_int(0, symbols.length)].toUpperCase(), j * font_size, i * font_size);
             }
             ++index;
         }
