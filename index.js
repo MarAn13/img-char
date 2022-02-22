@@ -111,6 +111,6 @@ function draw() {
             ++index;
         }
     }
-    console.log(font_size, scaled_grayscales.length, index);
+    //console.log(font_size, scaled_grayscales.length, index);
 }
 img.src = "test_img.jpg";
