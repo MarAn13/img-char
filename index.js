@@ -93,7 +93,7 @@ function draw() {
     }
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     let scaled_grayscales = reduce_scale(grayscales, kernel);
-    let font_size = Math.floor(Math.sqrt(canvas.height * canvas.width / scaled_grayscales.length));
+    let font_size = Math.ceil(Math.sqrt(canvas.height * canvas.width / scaled_grayscales.length));
     ctx.font = font_size.toString() + 'px serif';
     let pixel_arr_length = Math.floor(Math.sqrt(scaled_grayscales.length));
     let index = 0;
