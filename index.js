@@ -69,6 +69,10 @@ function reduce_scale(pixel_arr, kernel) {
                     avg += pixel_arr[pixel_index];
                 }
             }
+            if (avg === 0) {
+                pixel_index = i * temp_pixel_arr_length + j;
+                avg += pixel_arr[pixel_index];
+            }
             avg = avg / (x_step * y_step);
             new_pixel_arr.push(avg);
         }
